@@ -1,0 +1,247 @@
+$break-smallest: 350px
+$break-small: 560px
+$break-medium: 801px
+$redish: #ed5e5e
+$blackest: #181818
+$black: #1e1e1e
+$blackish: #242424
+$dark: #2a2a2a
+$darkish: #2f2f2f
+$medium: #ddd
+$lightish: #d6d6d8
+$light: #f6f6f8
+
+@import '.bourbon/bourbon'
+
+@font-face
+  font-family: 'narrow'
+  src: url('../fonts/LaneNarrow.ttf')
+@font-face
+  font-family: 'thin'
+  src: url('../fonts/Vegur-Light.otf')
+@font-face
+  font-family: 'medium'
+  src: url('../fonts/Vegur-Regular.otf')
+
+*::-webkit-scrollbar
+  display: none
+
+*
+  -moz-scrollbars-none
+
+html
+  height: 100%
+
+body
+  margin: 0 0 0 0
+  height: 100%
+  background: $black
+  // overflow-y: hidden
+  height: 100%
+  text-align: left
+
+button
+  @include transition(all 0.3s)
+  cursor: pointer
+  border: none
+  padding: 0
+  color: $light
+  background: none
+  letter-spacing: 3px
+  text-decoration: none
+  text-transform: uppercase
+  font-size: 30px
+  font-weight: 100
+  font-family: 'thin'
+  margin: 0px !important
+
+h2, h3
+  text-decoration: none
+  text-transform: uppercase
+  font-size: 30px
+  font-weight: 100
+  font-family: 'thin'
+  text-align: center
+
+
+h2
+  font-size: 30px
+  padding: 6px 0
+  letter-spacing: 1px
+
+  @media screen and (max-width: $break-medium)
+    font-size: 30px
+  @media screen and (max-width: $break-small)
+    font-size: 22px
+
+h3
+  letter-spacing: 2px
+  font-size: 16px
+  text-align: left
+
+p, li, table, .sek
+  letter-spacing: 1px
+  margin-top: 0
+  margin-bottom: 0
+  line-height: 22px
+  text-decoration: none
+  font-size: 14px
+  font-weight: 100
+  font-family: 'medium'
+
+.stopper
+  +size(10)
+  width: 10px
+  fill: $light
+  margin: -8px auto
+
+.d
+  height: 100%
+  margin-left: auto
+  margin-right: auto
+  color: $lightish
+  background: $black
+  padding: 30px
+  border-left: 30px solid $black !important
+  border-right: 30px solid $black !important
+  max-width: 500px
+
+  @media screen and (max-width: 600px)
+    background: $blackest
+
+.group
+  width: 100%
+  margin: 30px 0
+  //background: $blackish
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+
+.top
+  margin: 0 0 30px 0 !important
+
+.bottom
+  margin: 30px 0 0 0 !important
+
+.body
+  width: 100%
+
+.center
+  width: 100%
+  text-align: center
+
+.head
+  width: 100%
+  margin: 0
+
+.view
+  height: 100%
+  display: flex
+  flex-direction: column
+
+/***********     HEADER     **********/
+
+.header
+  top: 0px
+  display: flex
+  flex-grow: 1
+  align-items: center
+  justify-content: center
+  background: url(../images/flowers.jpg) no-repeat center center fixed
+  background-size: cover
+  min-height: 100px
+
+  @media screen and (max-width: $break-medium)
+    background: url(../images/flowers_medium.jpg) no-repeat center center fixed
+
+.name1, .name2
+  letter-spacing: 10px
+  line-height: 0.4
+  text-decoration: none
+  text-transform: uppercase
+  font-size: 60px
+  font-family: 'narrow'
+  color: $light
+  margin: 45px 0
+  text-align: center
+
+  @media screen and (max-width: $break-medium)
+    font-size: 35px
+  @media screen and (max-width: $break-small)
+    font-size: 24px
+    letter-spacing: 3px
+
+
+/***********     NAV     **********/
+
+.content
+  bottom: 0px
+
+.nav
+  background: $blackish
+  box-sizing: border-box
+  text-align: center
+
+  .b:hover
+    background: $dark
+
+  .b
+    font-size: 20px
+    padding: 15px
+    text-align: center
+
+    @media screen and (max-width: $break-small)
+      width: 100%
+
+/***********     TJÄNSTER     **********/
+
+.dd
+  background: $blackest
+
+.nav-t
+  width: 100%
+  background: $medium
+  text-align: center
+
+
+  .b:hover
+    background: $light !important
+
+  .b
+    color: $dark
+    padding: 12px
+    font-size: 15px
+    font-weight: 700
+
+    @media screen and (max-width: 930px)
+      width: 100%
+
+/***********     PRISER     **********/
+
+.list
+  margin: 0 auto
+  display: inline-block
+
+.sek
+  color: $redish
+  padding: 0
+
+    top: -1px
+
+h3
+  margin-top: 25px
+
+table
+  border-spacing: 0
+  width: 100%
+
+tr:nth-child(even)
+  background-color: $blackish
+
+td, th, tr
+  padding: 3px 9px
+
+/***********     KONTAKT     **********/
+img.profil
+  width: 100%
