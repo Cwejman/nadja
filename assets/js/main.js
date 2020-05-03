@@ -32,8 +32,9 @@ function activate($par, $array){
     }
   }
 
-  $("html, body").scrollTop($(document).height() / 2);
-
+  $([document.documentElement, document.body]).animate({
+    scrollTop: $(".nav").offset().top
+  }, 400);
 }
 
 function activate_t($par, $array){
@@ -50,8 +51,7 @@ function activate_t($par, $array){
     }
   }
 
-  $("html, body").scrollTop($(document).height() / 2);
-
+  $("html, body").scrollTop($(".nav").offset().top);
 }
 
 $(document).ready(function(){
