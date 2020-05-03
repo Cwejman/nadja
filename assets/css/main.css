@@ -255,33 +255,14 @@ p, li, table, .sek {
   }
 }
 
-/***********     PRISER     ********* */
-.list {
-  margin: 0 auto;
-  display: inline-block;
+/***********     PRISER     **********/
+.contact {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
-.sek {
+.contact:hover {
   color: #ed5e5e;
-  padding: 0;
-  padding-top: -1px;
-}
-
-h3 {
-  margin-top: 25px;
-}
-
-table {
-  border-spacing: 0;
-  width: 100%;
-}
-
-tr:nth-child(even) {
-  background-color: #242424;
-}
-
-td, th, tr {
-  padding: 3px 9px;
 }
 
 /***********     KONTAKT     **********/

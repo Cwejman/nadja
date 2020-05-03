@@ -63,6 +63,7 @@ $(document).ready(function(){
   $(".b.t").click(function(){ activate(".dd.t", buttons); });
   $(".b.p").click(function(){ activate(".d.p", buttons); });
   $(".b.k").click(function(){ activate(".d.k", buttons); });
+  $(".contact").click(function(){ activate(".d.k", buttons); });
 
   $(".b.1").click(function(){ activate_t(".d.1", buttons_t); });
   $(".b.2").click(function(){ activate_t(".d.2", buttons_t); });
