@@ -1,5 +1,5 @@
 var buttons = ['.dd.t','.d.p','.d.k'];
-var buttons_t = ['.d.1','.d.2','.d.3','.d.4'];
+var buttons_t = ['.d.1','.d.2','.d.3','.d.4', '.d.5'];
 var active = false;
 var active_t = false;
 var current = '';
@@ -68,5 +68,6 @@ $(document).ready(function(){
   $(".b.2").click(function(){ activate_t(".d.2", buttons_t); });
   $(".b.3").click(function(){ activate_t(".d.3", buttons_t); });
   $(".b.4").click(function(){ activate_t(".d.4", buttons_t); });
+  $(".b.5").click(function(){ activate_t(".d.5", buttons_t); });
 
 });

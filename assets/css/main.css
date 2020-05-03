@@ -137,6 +137,10 @@ p, li, table, .sek {
   width: 100%;
 }
 
+.space {
+  margin-bottom: 8px;
+}
+
 .center {
   width: 100%;
   text-align: center;
