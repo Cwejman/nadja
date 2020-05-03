@@ -1,0 +1,17 @@
+{
+  "name": "nadja",
+  "version": "1.0.0",
+  "main": "index.html",
+  "repository": "https://github.com/Cwejman/nadja",
+  "author": "Jona <jcwejman@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "concurrently --kill-others \"live-server\" \"node-sass --output-style expanded --watch assets/css -o assets/css/\""
+  },
+  "devDependencies": {
+    "live-server": "1.2.1",
+    "concurrently": "5.2.0",
+    "node-sass": "4.14.0"
+  }
+}

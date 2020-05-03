@@ -1,16 +1,19 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "narrow";
+  font-family: 'narrow';
   src: url("../fonts/LaneNarrow.ttf");
 }
+
 @font-face {
-  font-family: "thin";
+  font-family: 'thin';
   src: url("../fonts/Vegur-Light.otf");
 }
+
 @font-face {
-  font-family: "medium";
+  font-family: 'medium';
   src: url("../fonts/Vegur-Regular.otf");
 }
+
 *::-webkit-scrollbar {
   display: none;
 }
@@ -29,6 +32,7 @@ body {
 
 button {
   -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
   transition: all 0.3s;
   cursor: pointer;
   border: none;
@@ -40,7 +44,7 @@ button {
   text-transform: uppercase;
   font-size: 30px;
   font-weight: 100;
-  font-family: "thin";
+  font-family: 'thin';
   margin: 0px !important;
 }
 
@@ -49,7 +53,7 @@ h2, h3 {
   text-transform: uppercase;
   font-size: 30px;
   font-weight: 100;
-  font-family: "thin";
+  font-family: 'thin';
   text-align: center;
 }
 
@@ -58,11 +62,13 @@ h2 {
   padding: 6px 0;
   letter-spacing: 1px;
 }
+
 @media screen and (max-width: 801px) {
   h2 {
     font-size: 30px;
   }
 }
+
 @media screen and (max-width: 560px) {
   h2 {
     font-size: 22px;
@@ -83,7 +89,7 @@ p, li, table, .sek {
   text-decoration: none;
   font-size: 14px;
   font-weight: 100;
-  font-family: "medium";
+  font-family: 'medium';
 }
 
 .stopper {
@@ -103,6 +109,7 @@ p, li, table, .sek {
   border-right: 30px solid  #1e1e1e !important;
   max-width: 500px;
 }
+
 @media screen and (max-width: 600px) {
   .d {
     background: #181818;
@@ -112,18 +119,10 @@ p, li, table, .sek {
 .group {
   width: 100%;
   margin: 30px 0;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .top {
@@ -150,33 +149,22 @@ p, li, table, .sek {
 
 .view {
   height: 100%;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
-/***********     HEADER     ********* */
+/***********     HEADER     **********/
 .header {
   top: 0px;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
   background: url(../images/flowers.jpg) no-repeat center center fixed;
   background-size: cover;
   min-height: 100px;
 }
+
 @media screen and (max-width: 801px) {
   .header {
     background: url(../images/flowers_medium.jpg) no-repeat center center fixed;
@@ -189,16 +177,18 @@ p, li, table, .sek {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 60px;
-  font-family: "narrow";
+  font-family: 'narrow';
   color: #f6f6f8;
   margin: 45px 0;
   text-align: center;
 }
+
 @media screen and (max-width: 801px) {
   .name1, .name2 {
     font-size: 35px;
   }
 }
+
 @media screen and (max-width: 560px) {
   .name1, .name2 {
     font-size: 24px;
@@ -206,32 +196,34 @@ p, li, table, .sek {
   }
 }
 
-/***********     NAV     ********* */
+/***********     NAV     **********/
 .content {
   bottom: 0px;
 }
 
 .nav {
   background: #242424;
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
+  box-sizing: border-box;
   text-align: center;
 }
+
 .nav .b:hover {
   background: #2a2a2a;
 }
+
 .nav .b {
   font-size: 20px;
   padding: 15px;
   text-align: center;
 }
+
 @media screen and (max-width: 560px) {
   .nav .b {
     width: 100%;
   }
 }
 
-/***********     TJÄNSTER     ********* */
+/***********     TJÄNSTER     **********/
 .dd {
   background: #181818;
 }
@@ -241,15 +233,18 @@ p, li, table, .sek {
   background: #ddd;
   text-align: center;
 }
+
 .nav-t .b:hover {
   background: #f6f6f8 !important;
 }
+
 .nav-t .b {
   color: #2a2a2a;
   padding: 12px;
   font-size: 15px;
   font-weight: 700;
 }
+
 @media screen and (max-width: 930px) {
   .nav-t .b {
     width: 100%;
@@ -285,7 +280,7 @@ td, th, tr {
   padding: 3px 9px;
 }
 
-/***********     KONTAKT     ********* */
+/***********     KONTAKT     **********/
 img.profil {
   width: 100%;
 }
