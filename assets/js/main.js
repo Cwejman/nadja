@@ -59,7 +59,7 @@ $(document).ready(function(){
   activate("none", buttons);
   activate_t("none", buttons_t);
 
-  $(".b.h").click(function(){ activate("none", buttons); });
+  $(".b.h").click(function(){ activate("none", buttons); active = false; });
   $(".b.t").click(function(){ activate(".dd.t", buttons); });
   $(".b.p").click(function(){ activate(".d.p", buttons); });
   $(".b.k").click(function(){ activate(".d.k", buttons); });
